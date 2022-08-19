@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.TitleSite{ 
+  text-align: left;
+  font-weight: 900p;
+  font-size: 20px;
+  padding-left: 5%;
+  padding-right:50vw;
+}
+
+.navContent{
+  padding-right: 20px;
+}
+
+.navbar {
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: var(--secondary-color);
+    
+  }
+  .navbar ul {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;   
+  }
+  .navbar .logo {
+    font-weight: bold;
+    color: var(--heading-color);
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+  .navbar .logo img {
+    margin-right: 10px;
+    filter: invert(25%);
+    width: 36px;
+    margin-top: -8px;
+  }
+  .navbar a {
+    color: #333;
+    align-items: center;
+    text-align: center;
+    padding-right: 5%;
+    text-decoration: none;
+  }
+  
+.btn{
+
+    font-family: Nunito, sans-serif;
+    color: black;
+}

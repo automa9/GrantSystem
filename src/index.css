@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,700;0,900;1,500&display=swap');
+
+/* variables */
+:root {
+  --heading-color: #444;
+  --text-color: #ffff;
+  --primary-color: #6153FF;
+  --secondary-color:#D1C5F2;
+  --highlight-color: #8055f7;
+/*   --bg-color: #f4f4f4;*/
+  background-color: #e7e7e7;
+}
+
+/* base styles */
+body {
+  font-family: Nunito, sans-serif;
+  margin: 0;
+  background: var(--bg-color);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position-x: center;
+}
+
+ul, li, p, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+
+.class-title{
+  padding-bottom: 30px;
+}
+
+.btn-modal{
+  margin:0px;
+  padding: 0px;
+}
+
+/* layout */
+.page-title {
+  padding:50px;
+  background-color: #ffffff;
+  font-size: 1em;
+  color: var(--heading-color);
+  display: inline-block;
+}
+.btn {
+
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  border: 2px solid var(--primary-color);
+  background-color: #ffff;
+}
+.btn:hover {
+  color: #fff;
+  background-color: var(--highlight-color);
+}
+
+/* forms */
+label {
+  display: block;
+  margin: 24px auto;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+label span {
+  display: block;
+  margin-bottom: 4px;
+}
+
+input, textarea {
+  padding: 6px 4px;
+  font-size: 1em;
+  color: #777;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+textarea {
+  min-height: 160px;
+}
+
+.radio{
+  margin-left: 100px;
+}
+.error {
+  color: red;
+  background: pink;
+  border: 1px solid red;
+  border-radius: 4px;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+.file-upload{
+  margin-top: 0%;
+}

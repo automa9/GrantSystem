@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,700;0,900;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;700&display=swap');
+
+.sidebar {
+    width: 200px;
+    min-width: 300px;
+    background: #ffff;
+    min-height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .sidebar.sidebar-content {
+    position: fixed;
+  
+    color: #383838;
+
+  }
+  .sidebar .sidebar-content .sidebar-tajuk {
+    font-family: Outfit;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+
+  }
+  .sidebar-content .user {
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 30px 30px;
+    border-bottom: 1px solid rgba(3, 3, 3, 0.2);
+  }
+  .sidebar .links {
+    margin-top: 20%;
+    margin-left: 20px;
+  }
+  .sidebar .links li {
+    position:center;
+    margin-top: 0;
+    margin-left:30px;
+  }
+  .sidebar .links a {
+    margin-top: 10px;
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .sidebar .links img {
+    margin-right: 10px;
+    filter: invert(30%);
+  }
+  .sidebar .links a:hover {
+    background-color: var(--highlight-color);
+    color: #000;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .sidebar .links a .img {
+    color: #000;
+  }
+  .sidebar .links a.active {
+
+    background-color: var(--secondary-color);
+    border-radius: 20px 0 0 20px;
+  }
+  .sidebar .links .active img {
+    filter: invert(30%);
+    color: #000;
+  }
+  

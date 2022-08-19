@@ -1,0 +1,43 @@
+.class-details{
+    margin: 0px;
+}
+.titlebox{
+   
+    background-color: rgb(255, 255, 255);
+    padding-top:20;
+    padding-bottom:30px;
+    padding-left:20px;
+    margin-top: -20px;
+}
+
+.form{
+    margin-bottom: 30%;
+    margin-top:10%;
+    margin-right:30%;
+    padding-right: 50px;
+}
+
+hr {
+    border: 0;
+    border-top: 2px dashed ;
+    color:#ccbaa6;
+  }
+
+  .btn-modal-1 {
+    margin-left: 80%;
+    padding: 10px 40px;
+    display: block;
+    font-size: 16px;
+  }
+
+  auth-form {
+    max-width: 360px;
+    margin: 60px auto;
+    padding: 40px;
+    border: 1px solid #ddd;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.05);
+    background: #fff;
+    padding-bottom: 90px;
+    border-radius: 18px;
+    overflow-y: hidden
+  }

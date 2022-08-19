@@ -1,0 +1,82 @@
+.auth-form {
+    max-width: 360px;
+    padding: 30px;
+    border: 1px solid #ddd;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.05);
+    background: #fff;
+    padding-bottom: 90px;
+    border-radius: 18px;
+    margin-bottom: 30px;
+  }
+
+.redbox{
+  border-color: red;
+  border-width: 2px;
+  color: red;
+}
+
+ .optroles {
+  width: 360px;
+  padding: 9px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: 'Nunito';
+  font-size: large;
+ }
+
+ section {
+  width: 100%;
+  max-width: 420px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  background-color: rgba(0,0,0,0.4);
+}
+
+ label,
+button {
+  margin-top: 1rem;
+}
+ .instructions > svg {
+  margin-right: 0.25rem;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.hide {
+  display: none;
+}
+
+.valid {
+  color: limegreen;
+  margin-left: 0.25rem;
+}
+
+.invalid {
+  color: red;
+  margin-left: 0.25rem;
+}
+
+.errmsg {
+  background-color: lightpink;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.line {
+  display: inline-block;
+}
+
+.flexGrow {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
