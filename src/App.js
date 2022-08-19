@@ -87,8 +87,8 @@ function App() {
               <Route path='/add-question'>
                 {!user && <Redirect to ="/login" />}
                 {user && <AddQuestion />}
+              
               </Route>
-
               <Route exact path="/" component={Dashboard} />
               <Route path="/class" component={Class} />
               <Route path="/quiz" component={Quiz} />
