@@ -4,25 +4,24 @@ import './App.css'
 
 //pages and component
 import Dashboard from './pages/dashboard/Dashboard'
-import Assignment from './pages/assignment/Assignment'
 import Login from './pages/login/Login'
 import Signup from './pages/signup/Signup'
 import Class from './pages/class/Class'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
-import TeacherSidebar from './components/TeacherSidebar';
-import OnlineUser from './components/OnlineUser';
-import Quiz from './pages/quiz/Quiz'
-import TeacherQuiz from './pages/quiz/TeacherQuiz'
+//import Quiz from './pages/proposalsubmissions/Quiz'
+import TeacherQuiz from './pages/proposalsubmissions/TeacherQuiz'
 import Attendance from './pages/attendance/Attendance'
-import MyClass from './pages/class/MyClass';
-import TeacherDashboard from './pages/dashboard/TeacherDashboard';
+
+import GrantApplications from './pages/class/GrantApplications';
+import ProposalSumbissions from './pages/proposal/ProposalSubmissions';
+
 import PageClassStud from './pages/class/PageClassStud';
-import CreateQuiz from './pages/quiz/CreateQuiz';
-import AddQuestion from './pages/quiz/AddQuestion'
+import CreateQuiz from './pages/proposalsubmissions/CreateQuiz';
+
 import ClassListTcr from './components/ClassListTcr';
 import PageClassTcr from './pages/class/PageClassTcr';
-import ToQuiz from './pages/quiz/ToQuiz';
+import ToQuiz from './pages/proposalsubmissions/ToQuiz';
 
 
 function App() {
@@ -36,14 +35,25 @@ function App() {
           <div className="container">
           <Navbar/>
             <Switch>
+
               <Route exact path="/">
               {!user && <Redirect to ="/login" />}
-              {user && <MyClass />}
               </Route>
-              <Route exact path='/quiz'>
+
+              <Route exact path="/grant-applications">
               {!user && <Redirect to ="/login" />}
-              {user && <Quiz />}
+              {user && <GrantApplications />}
               </Route>
+
+              <Route exact path='/proposal-submissions'>
+              {!user && <Redirect to ="/login" />}
+              {user && <ProposalSumbissions />}
+              </Route>
+
+              <Route exact path='/'>
+              {user && <Redirect to ="/grant-applications" />}
+              </Route>
+
               <Route path='/to-quiz'>
                 {!user && <Redirect to ="/login" />}
                 {user && <ToQuiz />}
@@ -62,15 +72,15 @@ function App() {
               </Route>
               <Route path='/tcrquiz'>
                 {!user && <Redirect to ="/login" />}
-                {user && <TeacherQuiz />}
+                {user && <TeacherQuiz/>}
               </Route>
               <Route path='/attendance'>
                 {!user && <Redirect to='/login'/>}
                 {user && <Attendance />}
               </Route>
-              <Route path='/my-class'>
+              <Route path='/GrantApplications'>
                 {!user && <Redirect to='/login'/>}
-                {user && <MyClass />}
+                {user && <GrantApplications/>}
               </Route>
               <Route path="/class-list/:id">
                 {!user && <Redirect to='/login'/>}
@@ -84,28 +94,24 @@ function App() {
                 {!user && <Redirect to='/login'/>}
                 {user && <CreateQuiz />}
               </Route>
-              <Route path='/add-question'>
-                {!user && <Redirect to ="/login" />}
-                {user && <AddQuestion />}
-              
-              </Route>
+
               <Route exact path="/" component={Dashboard} />
               <Route path="/class" component={Class} />
-              <Route path="/quiz" component={Quiz} />
-              <Route path="/tcrdashboard" component={TeacherDashboard}/>
               <Route path="/tcrquiz" component={TeacherQuiz} />
               <Route path="/attendance" component={Attendance} />
-              <Route path="/my-class" component={MyClass} />
+
+              <Route path="/grant-applications" component={GrantApplications} />
+              <Route path="/proposal-submissions" component={ProposalSumbissions} />
+              <Route path="/project-implementations" component={GrantApplications} />
+              <Route path="/approved-applications" component={ProposalSumbissions} />
+
               <Route path="/class-list/:id" component={PageClassStud} />
               <Route path="/create-quiz" component={CreateQuiz} />
-              <Route path="/add-question" component={AddQuestion} />
               <Route path='/class-list-tcr/:id' component={ClassListTcr}/>
               <Route path='/to-quiz' component={ToQuiz}/>
             </Switch>
           </div>
           {/* <div>{user && <OnlineUser/>}</div>*/}
-          
-           
         </BrowserRouter>
       )}
     </div>

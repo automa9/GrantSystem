@@ -2,11 +2,11 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 
 //styles
-import './Class.css'
+import './GrantApplications.css'
 
 import { useAuthContext } from '../../hooks/useAuthContext'
 import { projectFirestore } from '../../firebase/config'
-import ModalClass from './ModalClass'
+import ModalClass from './ModalGrantApplication'
 import ClassListTcr from '../../components/ClassListTcr'
 
 export default function Class({ classes }) {

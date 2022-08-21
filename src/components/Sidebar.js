@@ -31,25 +31,25 @@ const { user } = useAuthContext()
         <nav className="links">
             <ul>
                 <li>
-                    <NavLink to="/my-class">
+                    <NavLink to="/grant-applications">
                         {/*<img src={SubjectIcon} alt="subject icon" />*/}
                         <span>Grant Applications</span>
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/to-quiz">
+                    <NavLink to="/proposal-submissions">
                         
                         <span>Proposal Submissions</span>
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/class">
+                    <NavLink to="/project-implimentation">
                        
                         <span>Project Implimentation</span>
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/tcrquiz">
+                    <NavLink to="/approved-applications">
                       
                         <span>Approved Applications</span>
                     </NavLink>

@@ -96,7 +96,7 @@ const handleSubmit = async (e) => {
         
         onClick={toggleModal}
         className="btn-modal-1">
-            + Create Class
+            + Add Application
         </button>
 
         {modal && (

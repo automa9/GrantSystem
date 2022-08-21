@@ -34,6 +34,7 @@ ul {
 }
 
 .btn-modal{
+  align-self: center;
   margin:0px;
   padding: 0px;
 }
@@ -58,6 +59,10 @@ ul {
 .btn:hover {
   color: #fff;
   background-color: var(--highlight-color);
+}
+
+.contex{
+  padding:40px;
 }
 
 /* forms */
