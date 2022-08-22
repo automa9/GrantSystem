@@ -28,6 +28,7 @@ export const useLogin = () => {
         setError(null)
       }
     } 
+    //catch error
     catch(err) {
       if (!isCancelled) {
         setError(err.message)

@@ -96,7 +96,7 @@ const handleSubmit = async (e) => {
         
         onClick={toggleModal}
         className="btn-modal-1">
-            + Add Application
+            + Apply New Grant
         </button>
 
         {modal && (
@@ -105,13 +105,13 @@ const handleSubmit = async (e) => {
                 <div className="modal-content">
                 <form className="create-subject" onSubmit={handleSubmit}>  
                     <label>
-                    <span>Subject:</span>
+                    <span>Project Title:</span>
                     <Select
-                        onChange={(option) => setSubject(option)}
-                        options={subjects}/>
+                        onChange={(e) => setSubject(e.target.value)}
+                        input={subjects}/>
                     </label>
                     <label>
-                    <span>Class:</span>
+                    <span>Applicant Name:</span>
                         <input 
                         required
                         type='text'
@@ -119,7 +119,7 @@ const handleSubmit = async (e) => {
                         value={classroom}/>
                     </label>
                     <label>
-                    <span>School:</span>
+                    <span>Study Programme:</span>
                         <input 
                         required
                         type='text'
@@ -127,13 +127,11 @@ const handleSubmit = async (e) => {
                         value={school}/>
                         </label>
                     <label>
-                        <span>Year:</span>
+                        <span>Matric Number:</span>
                         <input 
                         required
                         type='number'
                         onChange={(e) => setYear(e.target.value)}
-                        min={2020}
-                        max={2030}
                         value={year}/>
                     </label>
                     {/*<label>
