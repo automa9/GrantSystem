@@ -34,9 +34,7 @@ function App() {
     <div className="App">
       {authIsReady && (
         <BrowserRouter>
-
-
-
+        
         {user && <Sidebar />}
           <div className="container">
           <Navbar/>

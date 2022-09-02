@@ -52,12 +52,12 @@ const handleSubmit = async (e) => {
     setFormError(null)
 
     if (!subject_) {
-        setFormError('Please select a subject')
+        setFormError('Please write title')
         return
     }
 
     if (!classroom) {
-        setFormError('Please enter class')
+        setFormError('Please enter')
         return
     }
 
@@ -142,7 +142,7 @@ const handleSubmit = async (e) => {
                             isMulti
                         />
                     </label>*/}
-                {!isPending && <button className='btn'>Confirm</button>}
+                {!isPending && <button className='btn'>Next</button>}
                 {isPending && <button className="btn" disabled>loading</button>}
                 {toggleModal}
                 {error && <div className='error'>{error}</div>}
